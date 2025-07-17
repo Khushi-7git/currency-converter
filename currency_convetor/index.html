@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="header">
+            <h1><i class="fa-solid fa-comment-dollar fa-xl" style="color: #49ecfb;"></i>currency converter</h1>
+        </div>
+        <form>
+            <div class ="amount">
+                <p> enter amount</p>
+                <input value="100"type="text"/>
+            </div>
+            <div class="dropdown">
+                <div class="currency-icons">
+                <div class="from">
+                    <p>from</p>
+                    <div class="select-container">
+                         
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="Currency Icon"/>
+                        <select id="box2" name="from">
+                            
+                        </select>
+                    </div>
+
+                </div>
+                <div class="to">
+                    <p>to</p>
+                    <div class="select-container2">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="Currency Icon"/>
+                        <select id="box1"name="to">
+                           
+                        </select>
+                    </div>
+
+                </div>
+                </div>
+                <div class="exchange">
+                    <div class="msg">1USD = 74.85INR</div>
+                    <button class="submitbtn" type="submit">GET EXCHANGE RATE </button>
+                </div>
+        </form>
+    </div>
+
+
+    <script src="code.js"></script>    
+    <script src="convetor.js"></script>
+</body>
+</html>
